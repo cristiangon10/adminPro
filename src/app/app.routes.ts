@@ -1,24 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
-import { ProgressComponent } from './pages/progress/progress.component';
-import { GraficasInicialComponent } from './pages/graficas-inicial/graficas-inicial.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
 
 
 const appRoutes: Routes = [
-    {
-        path: '', 
-        component: PagesComponent, 
-        children: [
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'progress', component: ProgressComponent },
-            { path: 'grafica', component: GraficasInicialComponent },
-            { path: '', redirectTo: '/dashboard',  pathMatch: 'full' }
-        ]
-    },
     { path: 'login', component: LoginComponent },
     { path: 'registro', component: RegisterComponent },
     { path: '**', component: NopagefoundComponent }
