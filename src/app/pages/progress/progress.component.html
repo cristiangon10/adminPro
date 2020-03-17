@@ -1,3 +1,38 @@
-<p>
-  progress works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-title mt-3 text-center">
+        <h3>
+          Progreso del coronavirus:
+        </h3>
+      </div>
+
+
+      <div class="card-body">
+        <div class="mt-1">
+          <app-progress-bar [color]="'bg-warning'" [valor]="porcentaje1"></app-progress-bar>
+        </div>
+        <div class="mt-1">
+          <app-progress-bar [color]="'bg-danger'" [valor]="porcentaje2"></app-progress-bar>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-6">
+
+    <app-incrementador (cambioValor)="porcentaje1 = $event" [title]="'Grafica 1'"></app-incrementador>
+
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-incrementador (cambioValor)="porcentaje2 = $event" [title]="'Grafica 2'"></app-incrementador>
+      </div>
+    </div>
+  </div>
+
+</div>
