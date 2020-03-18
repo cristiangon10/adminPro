@@ -18,6 +18,7 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar.co
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.component';
 import { CommonModule } from '@angular/common';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { CommonModule } from '@angular/common';
         PagesComponent,
         ProgressBarComponent,
         IncrementadorComponent,
-        GraficaDonaComponent
+        GraficaDonaComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,

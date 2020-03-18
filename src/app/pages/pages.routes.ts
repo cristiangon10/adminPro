@@ -3,6 +3,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { GraficasInicialComponent } from './graficas-inicial/graficas-inicial.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 const pagesRoutes: Routes = [
@@ -13,6 +14,7 @@ const pagesRoutes: Routes = [
             { path: 'dashboard', component: DashboardComponent },
             { path: 'progress', component: ProgressComponent },
             { path: 'grafica', component: GraficasInicialComponent },
+            { path: 'account', component: AccountSettingsComponent },
             { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
         ]
     }

@@ -15,6 +15,9 @@ import { RegisterComponent } from './login/register.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+//Servicios
+import { ServiceModule } from './services/service.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,8 @@ import { CommonModule } from '@angular/common';
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
